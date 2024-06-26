@@ -1,0 +1,91 @@
+.accounts-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.account-form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.account-form input, .account-form select {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.account-form button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #1E0342;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.account-form button:hover {
+    background-color: #000000;
+}
+
+.accounts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.account-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #F5F7F8;
+}
+
+.account-card h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.account-card p {
+    margin: 5px 0;
+}
+.accounts-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.account-card button {
+    padding: 8px 16px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.account-card .edit-btn {
+    background-color: #1E0342;
+    color: white;
+}
+
+.account-card .edit-btn:hover {
+    background-color: #000000;
+}
+
+.account-card .delete-btn {
+    background-color: #FF4500;
+    color: white;
+}
+
+.account-card .delete-btn:hover {
+    background-color: #FF6347;
+}
+
+.account-card input {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

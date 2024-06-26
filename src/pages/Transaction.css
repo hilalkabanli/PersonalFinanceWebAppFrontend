@@ -1,0 +1,135 @@
+.transaction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.card input,
+.card select,
+.card button {
+  margin: 5px 0;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.card input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.card input[type="number"]::-webkit-outer-spin-button,
+.card input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card input[type="number"]:hover,
+.card input[type="number"]:focus {
+  border-color: #66afe9;
+}
+
+.card input[type="text"]:hover,
+.card input[type="text"]:focus,
+.card select:hover,
+.card select:focus {
+  border-color: #66afe9;
+}
+
+.card button {
+  background-color: #1E0342;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #1E0342;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+
+.transaction-lists {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.transaction-list {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.transaction-list h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.transaction-item span {
+  flex: 1;
+  text-align: center;
+}
+
+.transaction-item span:first-child {
+  flex: 2;
+}
+
+@media screen and (max-width: 600px) {
+  .cards-container,
+  .transaction-lists {
+    flex-direction: column;
+  }
+
+  .card,
+  .transaction-list {
+    width: 100%;
+  }
+}
